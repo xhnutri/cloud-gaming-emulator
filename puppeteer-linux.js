@@ -13,7 +13,7 @@ const runner = async () => {
   browser = await puppeteer.launch({
     executablePath: "/usr/bin/firefox",
     // product: "firefox",
-    headless: true,
+    headless: false,
     timeout: 10000,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
     defaultViewport: {
