@@ -28,7 +28,7 @@ const runner = async () => {
   // await page.setDefaultNavigationTimeout(1000);
   console.log("1.1 Iniciando Navegador");
   await page.goto("file:///root/Downloads/github/cloud-gaming-emulator/peerjs/index.html", {
-    waitUntil: "load", timeout: 10000
+    waitUntil: "load"
   });
   // console.log("1.2. Rellenando name user");
   await page.waitForSelector('input[id="room-input"]');
