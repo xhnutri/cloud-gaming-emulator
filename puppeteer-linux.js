@@ -14,7 +14,7 @@ const runner = async () => {
     executablePath: "/usr/bin/firefox",
     product: "firefox",
     headless: false,
-    timeout: 100,
+    timeout: 10000,
     // args: ["--no-sandbox", "--disable-setuid-sandbox"],
     defaultViewport: {
       width: 1220,
