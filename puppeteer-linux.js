@@ -27,7 +27,7 @@ const runner = async () => {
   // Configurar el tiempo de espera de la navegación
   // await page.setDefaultNavigationTimeout(1000);
   console.log("1.1 Iniciando Navegador");
-  await page.goto("/root/Downloads/github/cloud-gaming-emulator/peerjs/index.html", {
+  await page.goto("file:///root/Downloads/github/cloud-gaming-emulator/peerjs/index.html", {
     waitUntil: "load", timeout: 10000
   });
   // console.log("1.2. Rellenando name user");
