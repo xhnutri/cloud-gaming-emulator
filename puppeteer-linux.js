@@ -2,11 +2,6 @@
 const { getStream, launch } = require("puppeteer-stream");
 const puppeteer = require('puppeteer');
 const fs = require("fs");
-var robot = require("robotjs");
-
-//Get the mouse position, retuns an object with x and y. 
-var mouse=robot.getMousePos();
-console.log("Mouse is at x:" + mouse.x + " y:" + mouse.y);
 
 
 // //Left click!
@@ -43,7 +38,7 @@ const runner = async () => {
   // await page.mouse.move(1220/2, 200);
   // await page.mouse.click(1220/2, 200);
   //Move the mouse down by 100 pixels.
-  robot.moveMouse(1220/2, 200);
+  // robot.moveMouse(1220/2, 200);
   // console.log("1.3. Rellenando Password user");
   // await page.waitForSelector('input[name=pass]');
   // await page.$eval('input[name=pass]', el => el.value = 'r3l86lf1CZQK');
