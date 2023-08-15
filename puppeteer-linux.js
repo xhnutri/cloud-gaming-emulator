@@ -23,11 +23,11 @@ const runner = async () => {
   });
   console.log("Abrimos la pagina")
   const page = await browser.newPage();
-  page.setViewport({ width: 1220, height: 720 });
+  // page.setViewport({ width: 1220, height: 720 });
   // Configurar el tiempo de espera de la navegación
   // await page.setDefaultNavigationTimeout(1000);
   console.log("1.1 Iniciando Navegador");
-  page.goto("file:///root/Downloads/github/cloud-gaming-emulator/peerjs/index.html");
+  await page.goto("file:///root/Downloads/github/cloud-gaming-emulator/peerjs/index.html");
   console.log("1.2. Rellenando name user");
   await page.waitForSelector('input[id="room-input"]');
   await page.$eval('input[id="room-input"]', el => el.value = 'r3l86l');
