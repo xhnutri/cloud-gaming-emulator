@@ -1,7 +1,7 @@
 // const express = require("express");
 // const app = express();
 // const bodyParser = require("body-parser");
-const runner = require("./puppeteer-windows");
+const runner = require("./puppeteer-linux");
 // const port = process.env.PORT || 3000;
 
 // app.use(bodyParser.json());
