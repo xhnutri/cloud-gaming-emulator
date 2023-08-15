@@ -25,10 +25,10 @@ const runner = async () => {
   const page = await browser.newPage();
   // page.setViewport({ width: 1220, height: 720 });
   // Configurar el tiempo de espera de la navegación
-  // await page.setDefaultNavigationTimeout(1000);
   console.log("1.1 Iniciando Navegador");
-  await page.goto("file:///root/Downloads/github/cloud-gaming-emulator/peerjs/index.html");
+   page.goto("file:///root/Downloads/github/cloud-gaming-emulator/peerjs/index.html");
   console.log("1.2. Rellenando name user");
+  await page.setDefaultNavigationTimeout(2000);
   await page.waitForSelector('input[id="room-input"]');
   await page.$eval('input[id="room-input"]', el => el.value = 'r3l86l');
   await page.click('button.btn.btn-secondary.mb-3');
